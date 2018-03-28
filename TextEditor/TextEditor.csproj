@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{98D577FF-B2DC-4FC0-9D30-800C19781654}</ProjectGuid>
+    <ProjectGuid>{1AF9F0BC-2170-4504-A236-BF32012EF15D}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>FileExplorer</RootNamespace>
-    <AssemblyName>FileExplorer</AssemblyName>
+    <RootNamespace>TextEditor</RootNamespace>
+    <AssemblyName>TextEditor</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -45,17 +45,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DirectoryEx.cs" />
-    <Compile Include="FileExplorerForm.cs">
+    <Compile Include="TextEditorForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FileExplorerForm.Designer.cs">
-      <DependentUpon>FileExplorerForm.cs</DependentUpon>
+    <Compile Include="TextEditorForm.Designer.cs">
+      <DependentUpon>TextEditorForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="FileExplorerForm.resx">
-      <DependentUpon>FileExplorerForm.cs</DependentUpon>
+    <EmbeddedResource Include="TextEditorForm.resx">
+      <DependentUpon>TextEditorForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -81,13 +80,34 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\if_39-Minimize_2123874.png" />
+    <None Include="Resources\background.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\if_ic_folder_open_48px_352375.png" />
+    <None Include="Resources\copy.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\if_paste_1608782.png" />
+    <None Include="Resources\file %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\folder %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\paste-clipboard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\scissors.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\text.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\typography.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\undo.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
